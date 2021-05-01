@@ -7,12 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6B667FA9263D6BA20092AE49 /* XCTestCase+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B667FA8263D6BA20092AE49 /* XCTestCase+extensions.swift */; };
+		6B667FAE263D6BC50092AE49 /* ColorAssetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B667FAD263D6BC50092AE49 /* ColorAssetTests.swift */; };
 		6BD5052B263BB807005ABFC4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BD5052A263BB807005ABFC4 /* AppDelegate.swift */; };
 		6BD5052F263BB807005ABFC4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BD5052E263BB807005ABFC4 /* ViewController.swift */; };
 		6BD50534263BB80B005ABFC4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6BD50533263BB80B005ABFC4 /* Assets.xcassets */; };
 		6BD50537263BB80B005ABFC4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BD50535263BB80B005ABFC4 /* LaunchScreen.storyboard */; };
 		6BD50542263BB80B005ABFC4 /* Trips__Example_Project_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BD50541263BB80B005ABFC4 /* Trips__Example_Project_Tests.swift */; };
 		6BD5054D263BB80B005ABFC4 /* Trips__Example_Project_UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BD5054C263BB80B005ABFC4 /* Trips__Example_Project_UITests.swift */; };
+		6BD92472263CC476002BC1FF /* ColorAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BD92471263CC476002BC1FF /* ColorAsset.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6B667FA8263D6BA20092AE49 /* XCTestCase+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+extensions.swift"; sourceTree = "<group>"; };
+		6B667FAD263D6BC50092AE49 /* ColorAssetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorAssetTests.swift; sourceTree = "<group>"; };
 		6BD50527263BB807005ABFC4 /* Trips (Example Project).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Trips (Example Project).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BD5052A263BB807005ABFC4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6BD5052E263BB807005ABFC4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -45,6 +50,7 @@
 		6BD50548263BB80B005ABFC4 /* Trips (Example Project)UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Trips (Example Project)UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BD5054C263BB80B005ABFC4 /* Trips__Example_Project_UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trips__Example_Project_UITests.swift; sourceTree = "<group>"; };
 		6BD5054E263BB80B005ABFC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6BD92471263CC476002BC1FF /* ColorAsset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorAsset.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				6BD5052A263BB807005ABFC4 /* AppDelegate.swift */,
+				6BD92471263CC476002BC1FF /* ColorAsset.swift */,
 				6BD5052E263BB807005ABFC4 /* ViewController.swift */,
 				6BD50533263BB80B005ABFC4 /* Assets.xcassets */,
 				6BD50535263BB80B005ABFC4 /* LaunchScreen.storyboard */,
@@ -108,6 +115,8 @@
 			isa = PBXGroup;
 			children = (
 				6BD50541263BB80B005ABFC4 /* Trips__Example_Project_Tests.swift */,
+				6B667FA8263D6BA20092AE49 /* XCTestCase+extensions.swift */,
+				6B667FAD263D6BC50092AE49 /* ColorAssetTests.swift */,
 				6BD50543263BB80B005ABFC4 /* Info.plist */,
 			);
 			path = "Trips (Example Project)Tests";
@@ -252,6 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6BD5052F263BB807005ABFC4 /* ViewController.swift in Sources */,
+				6BD92472263CC476002BC1FF /* ColorAsset.swift in Sources */,
 				6BD5052B263BB807005ABFC4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -260,6 +270,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B667FAE263D6BC50092AE49 /* ColorAssetTests.swift in Sources */,
+				6B667FA9263D6BA20092AE49 /* XCTestCase+extensions.swift in Sources */,
 				6BD50542263BB80B005ABFC4 /* Trips__Example_Project_Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
