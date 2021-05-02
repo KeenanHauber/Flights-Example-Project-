@@ -7,12 +7,26 @@
 
 import UIKit
 
+struct TicketViewData {
+    let airportsData: FlightAirportsViewData
+    let flightNumber: String
+//    let gate: String
+//    let terminal: String
+//    let seat: String
+}
+
 class TicketView: UIView, NibLoadable {
 
-    let shapeMask = CAShapeLayer()
+    // MARK: - Styling
 
+    /// The radius of the ticket cutouts.
     static let cutoutRadius: CGFloat = 20
+    /// The radius of the ticket's corners.
     static let cornerRadius: CGFloat = 5
+
+    // MARK: - Subcomponents
+
+    let shapeMask = CAShapeLayer()
 
     /// Provides masking for sub-content
     @IBOutlet weak var _maskView: UIView!
@@ -26,7 +40,10 @@ class TicketView: UIView, NibLoadable {
     let flightGateView = FlightInfoView.loadFromNib()
     let flightTerminalView = FlightInfoView.loadFromNib()
     let flightSeatView = FlightInfoView.loadFromNib()
+
     @IBOutlet weak var flightInfoStackView: UIStackView!
+
+    // MARK: - Setup
 
     func loadedFromNib() {
         flightAirportView.backgroundColor = ColorAsset.flightCentreBlue
@@ -43,6 +60,10 @@ class TicketView: UIView, NibLoadable {
             flightInfoStackView.addArrangedSubview(stackView)
         })
 
+        flightNumberView.setTitle("Flight")
+        flightGateView.setTitle("Gate")
+        flightTerminalView.setTitle("Terminal")
+        flightSeatView.setTitle("Seat")
 
         _maskView.layer.mask = shapeMask
         _maskView.layer.masksToBounds = true
@@ -53,6 +74,15 @@ class TicketView: UIView, NibLoadable {
         layer.shadowColor = UIColor.black.cgColor
         layer.shadowOpacity = 0.5
     }
+
+    // MARK: - Data
+
+    func configure(for data: TicketViewData) {
+        flightAirportView.configure(for: data.airportsData)
+        flightNumberView.infoLabel.text = data.flightNumber
+    }
+
+    // MARK: - Shape
 
     private var maskAdjustedForPreviousBounds: CGRect = .zero
     override func draw(_ rect: CGRect) {

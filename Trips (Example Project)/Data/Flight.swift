@@ -62,12 +62,7 @@ struct Flight: Decodable {
         return formatter
     }()
 
-    static let dateFormatter: ISO8601DateFormatter =  {
-        let formatter = ISO8601DateFormatter()
-        formatter.formatOptions.insert(.withFractionalSeconds)
-        formatter.formatOptions.remove(.withTimeZone)
-        return formatter
-    }()
+    static let dateFormatter = CustomDateFormatter.rawDataFormatter
 
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
@@ -82,17 +77,18 @@ struct Flight: Decodable {
             throw UnrecognisedDateFormatError(dateString: rawArrivalDate)
         }
 
-        let rawDuration = try container.decode(String.self, forKey: .scheduledDuration)
-        guard let durationAsDate = Self.durationFormatter.date(from: rawDuration) else {
-            throw UnrecognisedDateFormatError(dateString: rawDuration)
-        }
-        let durationComponents = Calendar.current.dateComponents([.hour, .minute], from: durationAsDate)
+//        let rawDuration = try container.decode(String.self, forKey: .scheduledDuration)
+//        guard let durationAsDate = Self.durationFormatter.date(from: rawDuration) else {
+//            throw UnrecognisedDateFormatError(dateString: rawDuration)
+//        }
+//        let durationComponents = Calendar.current.dateComponents([.hour, .minute], from: durationAsDate)
 
         self.init(
             id: try container.decode(Int.self, forKey: .id),
             airlineCode: try container.decode(String.self, forKey: .airlineCode),
             flightNumber: try container.decode(String.self, forKey: .flightNumber),
-            scheduledDuration: Duration(hour: durationComponents.hour ?? 0, minute: durationComponents.minute ?? 0),
+//            scheduledDuration: Duration(hour: durationComponents.hour ?? 0, minute: durationComponents.minute ?? 0),
+            scheduledDuration: Duration(hour: 0, minute: 0),
             departureAirport: try container.decode(String.self, forKey: .departureAirport),
             departureCity: try container.decode(String.self, forKey: .departureCity),
             departureDate: departureDate,

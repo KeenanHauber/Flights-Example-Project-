@@ -7,6 +7,7 @@
 
 import UIKit
 
+/// Displays a title-value pair of information.
 class FlightInfoView: UIView, NibLoadable {
     /// Displays the title of the view.
     ///
@@ -14,6 +15,11 @@ class FlightInfoView: UIView, NibLoadable {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var infoLabel: UILabel!
 
+    func loadedFromNib() {
+        infoLabel.text = " - -"
+    }
+
+    /// Formats the title and sets the value of titleLabel.
     func setTitle(_ title: String) {
         titleLabel.text = "\(title) :"
     }

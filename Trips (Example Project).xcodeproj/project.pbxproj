@@ -7,9 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6B4BCA4E263E46F70036EF41 /* Configurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4BCA4D263E46F70036EF41 /* Configurable.swift */; };
+		6B4BCA57263E50CB0036EF41 /* FlightTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4BCA55263E50CB0036EF41 /* FlightTableViewCell.swift */; };
+		6B4BCA58263E50CB0036EF41 /* FlightTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B4BCA56263E50CB0036EF41 /* FlightTableViewCell.xib */; };
+		6B4BCA5D263E511E0036EF41 /* FlightCellData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4BCA5C263E511E0036EF41 /* FlightCellData.swift */; };
+		6B4BCA6A263EA2660036EF41 /* CustomDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4BCA69263EA2660036EF41 /* CustomDateFormatter.swift */; };
+		6B4BCA6F263EB2F10036EF41 /* StringParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4BCA6E263EB2F10036EF41 /* StringParser.swift */; };
+		6B4BCA74263EB79D0036EF41 /* UINavigationBar+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4BCA73263EB79D0036EF41 /* UINavigationBar+extensions.swift */; };
+		6B4BCA79263EB8580036EF41 /* NavigationControllerStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4BCA78263EB8580036EF41 /* NavigationControllerStyle.swift */; };
+		6B4BCA7E263EB8C80036EF41 /* LabelStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4BCA7D263EB8C80036EF41 /* LabelStyle.swift */; };
+		6B4BCA84263EBA6C0036EF41 /* NavigationPushRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4BCA83263EBA6C0036EF41 /* NavigationPushRouter.swift */; };
+		6B4BCA8A263EBAAB0036EF41 /* TicketDataPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4BCA89263EBAAB0036EF41 /* TicketDataPresenter.swift */; };
+		6B4BCA92263EBACE0036EF41 /* FlightsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4BCA91263EBACE0036EF41 /* FlightsPresenter.swift */; };
+		6B4BCA9A263EBAFB0036EF41 /* FlightToFlightCellDataMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4BCA99263EBAFB0036EF41 /* FlightToFlightCellDataMapper.swift */; };
+		6B4BCA9F263EBB470036EF41 /* Actionable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4BCA9E263EBB470036EF41 /* Actionable.swift */; };
+		6B4BCAA8263EBB7E0036EF41 /* TableViewSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4BCAA7263EBB7E0036EF41 /* TableViewSection.swift */; };
+		6B4BCAAD263EBBA50036EF41 /* ItemActionTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4BCAAC263EBBA50036EF41 /* ItemActionTableViewDelegate.swift */; };
+		6B4BCAB5263EBC310036EF41 /* DequeueableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4BCAB4263EBC310036EF41 /* DequeueableCell.swift */; };
+		6B4BCABA263EBC4C0036EF41 /* ConfigurableCellTableViewDataSourceWithStringHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4BCAB9263EBC4C0036EF41 /* ConfigurableCellTableViewDataSourceWithStringHeader.swift */; };
 		6B630014263E21E800669361 /* FlightInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B630013263E21E800669361 /* FlightInfoView.swift */; };
 		6B630019263E220400669361 /* FlightInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B630018263E220400669361 /* FlightInfoView.xib */; };
 		6B63001E263E246900669361 /* DividingLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B63001D263E246900669361 /* DividingLine.swift */; };
+		6B63002F263E440A00669361 /* FlightsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B63002D263E440A00669361 /* FlightsViewController.swift */; };
+		6B630030263E440A00669361 /* FlightsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B63002E263E440A00669361 /* FlightsViewController.xib */; };
 		6B667FA9263D6BA20092AE49 /* XCTestCase+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B667FA8263D6BA20092AE49 /* XCTestCase+extensions.swift */; };
 		6B667FAE263D6BC50092AE49 /* ColorAssetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B667FAD263D6BC50092AE49 /* ColorAssetTests.swift */; };
 		6B667FC2263D6DEE0092AE49 /* APIURLTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B667FC1263D6DEE0092AE49 /* APIURLTests.swift */; };
@@ -21,10 +41,10 @@
 		6B66803A263D8C9D0092AE49 /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B668039263D8C9D0092AE49 /* NibLoadable.swift */; };
 		6B66803F263D93150092AE49 /* FlightAirportsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B66803E263D93150092AE49 /* FlightAirportsView.swift */; };
 		6B668044263D931E0092AE49 /* FlightAirportsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B668043263D931E0092AE49 /* FlightAirportsView.xib */; };
-		6BA7527D263C0E73009D0CEF /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6BA7527C263C0E73009D0CEF /* ViewController.xib */; };
+		6BA7527D263C0E73009D0CEF /* TicketViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6BA7527C263C0E73009D0CEF /* TicketViewController.xib */; };
 		6BA75282263C0EB5009D0CEF /* TicketView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6BA75281263C0EB5009D0CEF /* TicketView.xib */; };
 		6BD5052B263BB807005ABFC4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BD5052A263BB807005ABFC4 /* AppDelegate.swift */; };
-		6BD5052F263BB807005ABFC4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BD5052E263BB807005ABFC4 /* ViewController.swift */; };
+		6BD5052F263BB807005ABFC4 /* TicketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BD5052E263BB807005ABFC4 /* TicketViewController.swift */; };
 		6BD50534263BB80B005ABFC4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6BD50533263BB80B005ABFC4 /* Assets.xcassets */; };
 		6BD50537263BB80B005ABFC4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BD50535263BB80B005ABFC4 /* LaunchScreen.storyboard */; };
 		6BD50542263BB80B005ABFC4 /* Trips__Example_Project_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BD50541263BB80B005ABFC4 /* Trips__Example_Project_Tests.swift */; };
@@ -59,10 +79,30 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6B4BCA4D263E46F70036EF41 /* Configurable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configurable.swift; sourceTree = "<group>"; };
+		6B4BCA55263E50CB0036EF41 /* FlightTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightTableViewCell.swift; sourceTree = "<group>"; };
+		6B4BCA56263E50CB0036EF41 /* FlightTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FlightTableViewCell.xib; sourceTree = "<group>"; };
+		6B4BCA5C263E511E0036EF41 /* FlightCellData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightCellData.swift; sourceTree = "<group>"; };
+		6B4BCA69263EA2660036EF41 /* CustomDateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDateFormatter.swift; sourceTree = "<group>"; };
+		6B4BCA6E263EB2F10036EF41 /* StringParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringParser.swift; sourceTree = "<group>"; };
+		6B4BCA73263EB79D0036EF41 /* UINavigationBar+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationBar+extensions.swift"; sourceTree = "<group>"; };
+		6B4BCA78263EB8580036EF41 /* NavigationControllerStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationControllerStyle.swift; sourceTree = "<group>"; };
+		6B4BCA7D263EB8C80036EF41 /* LabelStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelStyle.swift; sourceTree = "<group>"; };
+		6B4BCA83263EBA6C0036EF41 /* NavigationPushRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationPushRouter.swift; sourceTree = "<group>"; };
+		6B4BCA89263EBAAB0036EF41 /* TicketDataPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketDataPresenter.swift; sourceTree = "<group>"; };
+		6B4BCA91263EBACE0036EF41 /* FlightsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightsPresenter.swift; sourceTree = "<group>"; };
+		6B4BCA99263EBAFB0036EF41 /* FlightToFlightCellDataMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FlightToFlightCellDataMapper.swift; path = "Trips (Example Project)/Formatting/FlightToFlightCellDataMapper.swift"; sourceTree = SOURCE_ROOT; };
+		6B4BCA9E263EBB470036EF41 /* Actionable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Actionable.swift; sourceTree = "<group>"; };
+		6B4BCAA7263EBB7E0036EF41 /* TableViewSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewSection.swift; sourceTree = "<group>"; };
+		6B4BCAAC263EBBA50036EF41 /* ItemActionTableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ItemActionTableViewDelegate.swift; path = "Trips (Example Project)/Interface/Table Views/ItemActionTableViewDelegate.swift"; sourceTree = SOURCE_ROOT; };
+		6B4BCAB4263EBC310036EF41 /* DequeueableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DequeueableCell.swift; sourceTree = "<group>"; };
+		6B4BCAB9263EBC4C0036EF41 /* ConfigurableCellTableViewDataSourceWithStringHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurableCellTableViewDataSourceWithStringHeader.swift; sourceTree = "<group>"; };
 		6B63000F263DDDF900669361 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		6B630013263E21E800669361 /* FlightInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightInfoView.swift; sourceTree = "<group>"; };
 		6B630018263E220400669361 /* FlightInfoView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FlightInfoView.xib; sourceTree = "<group>"; };
 		6B63001D263E246900669361 /* DividingLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DividingLine.swift; sourceTree = "<group>"; };
+		6B63002D263E440A00669361 /* FlightsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightsViewController.swift; sourceTree = "<group>"; };
+		6B63002E263E440A00669361 /* FlightsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FlightsViewController.xib; sourceTree = "<group>"; };
 		6B667FA8263D6BA20092AE49 /* XCTestCase+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+extensions.swift"; sourceTree = "<group>"; };
 		6B667FAD263D6BC50092AE49 /* ColorAssetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorAssetTests.swift; sourceTree = "<group>"; };
 		6B667FC1263D6DEE0092AE49 /* APIURLTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIURLTests.swift; sourceTree = "<group>"; };
@@ -74,11 +114,11 @@
 		6B668039263D8C9D0092AE49 /* NibLoadable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibLoadable.swift; sourceTree = "<group>"; };
 		6B66803E263D93150092AE49 /* FlightAirportsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightAirportsView.swift; sourceTree = "<group>"; };
 		6B668043263D931E0092AE49 /* FlightAirportsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FlightAirportsView.xib; sourceTree = "<group>"; };
-		6BA7527C263C0E73009D0CEF /* ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		6BA7527C263C0E73009D0CEF /* TicketViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TicketViewController.xib; sourceTree = "<group>"; };
 		6BA75281263C0EB5009D0CEF /* TicketView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TicketView.xib; sourceTree = "<group>"; };
 		6BD50527263BB807005ABFC4 /* Trips (Example Project).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Trips (Example Project).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BD5052A263BB807005ABFC4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6BD5052E263BB807005ABFC4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6BD5052E263BB807005ABFC4 /* TicketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketViewController.swift; sourceTree = "<group>"; };
 		6BD50533263BB80B005ABFC4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6BD50536263BB80B005ABFC4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6BD50538263BB80B005ABFC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -125,6 +165,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6B4BCA82263EBA4E0036EF41 /* Transitions */ = {
+			isa = PBXGroup;
+			children = (
+				6B4BCA83263EBA6C0036EF41 /* NavigationPushRouter.swift */,
+			);
+			path = Transitions;
+			sourceTree = "<group>";
+		};
+		6B4BCA88263EBA9A0036EF41 /* Formatting */ = {
+			isa = PBXGroup;
+			children = (
+				6B4BCA99263EBAFB0036EF41 /* FlightToFlightCellDataMapper.swift */,
+				6B4BCA91263EBACE0036EF41 /* FlightsPresenter.swift */,
+				6B4BCA89263EBAAB0036EF41 /* TicketDataPresenter.swift */,
+			);
+			path = Formatting;
+			sourceTree = "<group>";
+		};
+		6B4BCAA6263EBB710036EF41 /* Table Views */ = {
+			isa = PBXGroup;
+			children = (
+				6B4BCAAC263EBBA50036EF41 /* ItemActionTableViewDelegate.swift */,
+				6B4BCAB4263EBC310036EF41 /* DequeueableCell.swift */,
+				6B4BCAB9263EBC4C0036EF41 /* ConfigurableCellTableViewDataSourceWithStringHeader.swift */,
+				6B4BCAA7263EBB7E0036EF41 /* TableViewSection.swift */,
+			);
+			path = "Table Views";
+			sourceTree = "<group>";
+		};
 		6B630001263DDC2D00669361 /* Data */ = {
 			isa = PBXGroup;
 			children = (
@@ -147,8 +216,8 @@
 		6B630028263E43A200669361 /* Ticket Screen */ = {
 			isa = PBXGroup;
 			children = (
-				6BD5052E263BB807005ABFC4 /* ViewController.swift */,
-				6BA7527C263C0E73009D0CEF /* ViewController.xib */,
+				6BD5052E263BB807005ABFC4 /* TicketViewController.swift */,
+				6BA7527C263C0E73009D0CEF /* TicketViewController.xib */,
 				6B66803E263D93150092AE49 /* FlightAirportsView.swift */,
 				6B668043263D931E0092AE49 /* FlightAirportsView.xib */,
 				6BD92480263CE782002BC1FF /* ScheduledAirportView.swift */,
@@ -162,11 +231,27 @@
 			path = "Ticket Screen";
 			sourceTree = "<group>";
 		};
+		6B63002C263E43C500669361 /* Flight List Screen */ = {
+			isa = PBXGroup;
+			children = (
+				6B4BCA5C263E511E0036EF41 /* FlightCellData.swift */,
+				6B4BCA55263E50CB0036EF41 /* FlightTableViewCell.swift */,
+				6B4BCA56263E50CB0036EF41 /* FlightTableViewCell.xib */,
+				6B63002D263E440A00669361 /* FlightsViewController.swift */,
+				6B63002E263E440A00669361 /* FlightsViewController.xib */,
+			);
+			path = "Flight List Screen";
+			sourceTree = "<group>";
+		};
 		6B63FFF8263DDBD600669361 /* Interface */ = {
 			isa = PBXGroup;
 			children = (
+				6B4BCAA6263EBB710036EF41 /* Table Views */,
+				6B4BCA82263EBA4E0036EF41 /* Transitions */,
 				6BD92476263CDC49002BC1FF /* CGPoint+Extensions.swift */,
+				6B4BCA73263EB79D0036EF41 /* UINavigationBar+extensions.swift */,
 				6B668039263D8C9D0092AE49 /* NibLoadable.swift */,
+				6B63002C263E43C500669361 /* Flight List Screen */,
 				6B630028263E43A200669361 /* Ticket Screen */,
 			);
 			path = Interface;
@@ -186,8 +271,12 @@
 		6B63FFFD263DDBF500669361 /* Constants */ = {
 			isa = PBXGroup;
 			children = (
+				6B4BCA7D263EB8C80036EF41 /* LabelStyle.swift */,
 				6BD92471263CC476002BC1FF /* ColorAsset.swift */,
 				6BD92499263D64CE002BC1FF /* APIURL.swift */,
+				6B4BCA69263EA2660036EF41 /* CustomDateFormatter.swift */,
+				6B4BCA6E263EB2F10036EF41 /* StringParser.swift */,
+				6B4BCA78263EB8580036EF41 /* NavigationControllerStyle.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -216,7 +305,10 @@
 		6BD50529263BB807005ABFC4 /* Trips (Example Project) */ = {
 			isa = PBXGroup;
 			children = (
+				6B4BCA9E263EBB470036EF41 /* Actionable.swift */,
+				6B4BCA4D263E46F70036EF41 /* Configurable.swift */,
 				6BD5052A263BB807005ABFC4 /* AppDelegate.swift */,
+				6B4BCA88263EBA9A0036EF41 /* Formatting */,
 				6B63FFFC263DDBEB00669361 /* Data */,
 				6B63FFFD263DDBF500669361 /* Constants */,
 				6B63FFF8263DDBD600669361 /* Interface */,
@@ -355,8 +447,10 @@
 			files = (
 				6BD50537263BB80B005ABFC4 /* LaunchScreen.storyboard in Resources */,
 				6BD92486263CE796002BC1FF /* ScheduledAirportView.xib in Resources */,
+				6B4BCA58263E50CB0036EF41 /* FlightTableViewCell.xib in Resources */,
+				6B630030263E440A00669361 /* FlightsViewController.xib in Resources */,
 				6B630019263E220400669361 /* FlightInfoView.xib in Resources */,
-				6BA7527D263C0E73009D0CEF /* ViewController.xib in Resources */,
+				6BA7527D263C0E73009D0CEF /* TicketViewController.xib in Resources */,
 				6B668044263D931E0092AE49 /* FlightAirportsView.xib in Resources */,
 				6BA75282263C0EB5009D0CEF /* TicketView.xib in Resources */,
 				6BD50534263BB80B005ABFC4 /* Assets.xcassets in Resources */,
@@ -389,17 +483,35 @@
 				6BD5056D263BC052005ABFC4 /* TicketView.swift in Sources */,
 				6B630014263E21E800669361 /* FlightInfoView.swift in Sources */,
 				6BD92477263CDC49002BC1FF /* CGPoint+Extensions.swift in Sources */,
-				6BD5052F263BB807005ABFC4 /* ViewController.swift in Sources */,
+				6B4BCA5D263E511E0036EF41 /* FlightCellData.swift in Sources */,
+				6BD5052F263BB807005ABFC4 /* TicketViewController.swift in Sources */,
 				6BD92481263CE782002BC1FF /* ScheduledAirportView.swift in Sources */,
+				6B4BCA8A263EBAAB0036EF41 /* TicketDataPresenter.swift in Sources */,
 				6BD92472263CC476002BC1FF /* ColorAsset.swift in Sources */,
+				6B4BCA9F263EBB470036EF41 /* Actionable.swift in Sources */,
+				6B4BCAA8263EBB7E0036EF41 /* TableViewSection.swift in Sources */,
+				6B4BCABA263EBC4C0036EF41 /* ConfigurableCellTableViewDataSourceWithStringHeader.swift in Sources */,
 				6BD92490263D635E002BC1FF /* URLSessionService.swift in Sources */,
 				6BD9249A263D64CE002BC1FF /* APIURL.swift in Sources */,
 				6B63001E263E246900669361 /* DividingLine.swift in Sources */,
+				6B4BCA6F263EB2F10036EF41 /* StringParser.swift in Sources */,
+				6B4BCA9A263EBAFB0036EF41 /* FlightToFlightCellDataMapper.swift in Sources */,
+				6B4BCA4E263E46F70036EF41 /* Configurable.swift in Sources */,
 				6BD9248B263D6337002BC1FF /* JSONDownloadTaskService.swift in Sources */,
 				6BD924A2263D666B002BC1FF /* Flight.swift in Sources */,
+				6B4BCA57263E50CB0036EF41 /* FlightTableViewCell.swift in Sources */,
+				6B4BCAAD263EBBA50036EF41 /* ItemActionTableViewDelegate.swift in Sources */,
+				6B4BCA92263EBACE0036EF41 /* FlightsPresenter.swift in Sources */,
+				6B4BCA7E263EB8C80036EF41 /* LabelStyle.swift in Sources */,
 				6B66803A263D8C9D0092AE49 /* NibLoadable.swift in Sources */,
+				6B4BCA6A263EA2660036EF41 /* CustomDateFormatter.swift in Sources */,
 				6BD5052B263BB807005ABFC4 /* AppDelegate.swift in Sources */,
+				6B63002F263E440A00669361 /* FlightsViewController.swift in Sources */,
+				6B4BCA84263EBA6C0036EF41 /* NavigationPushRouter.swift in Sources */,
 				6BD92495263D6384002BC1FF /* FlightDataService.swift in Sources */,
+				6B4BCAB5263EBC310036EF41 /* DequeueableCell.swift in Sources */,
+				6B4BCA74263EB79D0036EF41 /* UINavigationBar+extensions.swift in Sources */,
+				6B4BCA79263EB8580036EF41 /* NavigationControllerStyle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
