@@ -144,10 +144,9 @@
 			path = Constants;
 			sourceTree = "<group>";
 		};
-		6B63FFF8263DDBD600669361 /* Interface */ = {
+		6B630028263E43A200669361 /* Ticket Screen */ = {
 			isa = PBXGroup;
 			children = (
-				6BD92476263CDC49002BC1FF /* CGPoint+Extensions.swift */,
 				6BD5052E263BB807005ABFC4 /* ViewController.swift */,
 				6BA7527C263C0E73009D0CEF /* ViewController.xib */,
 				6B66803E263D93150092AE49 /* FlightAirportsView.swift */,
@@ -156,10 +155,19 @@
 				6BD92485263CE795002BC1FF /* ScheduledAirportView.xib */,
 				6BD5056C263BC052005ABFC4 /* TicketView.swift */,
 				6BA75281263C0EB5009D0CEF /* TicketView.xib */,
-				6B668039263D8C9D0092AE49 /* NibLoadable.swift */,
 				6B630013263E21E800669361 /* FlightInfoView.swift */,
 				6B630018263E220400669361 /* FlightInfoView.xib */,
 				6B63001D263E246900669361 /* DividingLine.swift */,
+			);
+			path = "Ticket Screen";
+			sourceTree = "<group>";
+		};
+		6B63FFF8263DDBD600669361 /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				6BD92476263CDC49002BC1FF /* CGPoint+Extensions.swift */,
+				6B668039263D8C9D0092AE49 /* NibLoadable.swift */,
+				6B630028263E43A200669361 /* Ticket Screen */,
 			);
 			path = Interface;
 			sourceTree = "<group>";
