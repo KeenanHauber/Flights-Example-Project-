@@ -87,16 +87,12 @@ struct Flight: Decodable {
             throw UnrecognisedDateFormatError(dateString: rawDuration)
         }
         let durationComponents = Calendar.current.dateComponents([.hour, .minute], from: durationAsDate)
-        guard let hour = durationComponents.hour,
-              let minute = durationComponents.minute else {
-            throw UnrecognisedDateFormatError(dateString: rawDuration)
-        }
 
         self.init(
             id: try container.decode(Int.self, forKey: .id),
             airlineCode: try container.decode(String.self, forKey: .airlineCode),
             flightNumber: try container.decode(String.self, forKey: .flightNumber),
-            scheduledDuration: Duration(hour: hour, minute: minute),
+            scheduledDuration: Duration(hour: durationComponents.hour ?? 0, minute: durationComponents.minute ?? 0),
             departureAirport: try container.decode(String.self, forKey: .departureAirport),
             departureCity: try container.decode(String.self, forKey: .departureCity),
             departureDate: departureDate,
