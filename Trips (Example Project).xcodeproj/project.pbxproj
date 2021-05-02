@@ -187,6 +187,7 @@
 		6BD5051E263BB807005ABFC4 = {
 			isa = PBXGroup;
 			children = (
+				6B63000F263DDDF900669361 /* README.md */,
 				6BD50529263BB807005ABFC4 /* Trips (Example Project) */,
 				6BD50540263BB80B005ABFC4 /* Trips (Example Project)Tests */,
 				6BD5054B263BB80B005ABFC4 /* Trips (Example Project)UITests */,
@@ -214,7 +215,6 @@
 				6BD50533263BB80B005ABFC4 /* Assets.xcassets */,
 				6BD50535263BB80B005ABFC4 /* LaunchScreen.storyboard */,
 				6BD50538263BB80B005ABFC4 /* Info.plist */,
-				6B63000F263DDDF900669361 /* README.md */,
 			);
 			path = "Trips (Example Project)";
 			sourceTree = "<group>";
