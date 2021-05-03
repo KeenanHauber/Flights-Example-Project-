@@ -58,5 +58,12 @@ extension XCTestCase {
             XCTFail("\(value1) is not equal to \(value2)!", file: file, line: line)
         }
     }
+
+    /// Fails if the provided values are not equal.
+    func expect<ValueType: Equatable>(_ value1: ValueType?, toEqual value2: ValueType, file: StaticString = #filePath, line: UInt = #line) {
+        if value1 != value2 {
+            XCTFail("\(String(describing: value1)) is not equal to \(value2)!", file: file, line: line)
+        }
+    }
 }
 

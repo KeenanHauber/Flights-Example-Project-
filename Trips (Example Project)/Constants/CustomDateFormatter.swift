@@ -10,21 +10,30 @@ import Foundation
 
 /// Describes a
 enum CustomDateFormatter {
-    /// A formatter with autoupdating current locale that will use a localized format from the provided template.
-    static func DateFormatterWithAutoupdatingLocale(template: String) -> DateFormatter {
+    /// A non-localized formatter using the provided template.
+    static func DateFormatterWithDateFormat(template: String, useLowercasedAMPMSymbols: Bool = false) -> DateFormatter {
         let formatter = DateFormatter()
-        formatter.locale = .autoupdatingCurrent
-        formatter.setLocalizedDateFormatFromTemplate(template)
+        formatter.dateFormat = template
+
+        // Note that Locale usually determines whether AM/PM symbols are upper/lowercase.
+        // Capitalisation is standard in the US, but not in Australia.
+        // I've done this for testing purposes, since test environments (including simulator)
+        // use US locale by default.
+        if useLowercasedAMPMSymbols {
+            formatter.amSymbol = formatter.amSymbol?.lowercased()
+            formatter.pmSymbol = formatter.pmSymbol?.lowercased()
+        }
+
         return formatter
     }
 
     /// Formats `2021-08-02T18:08:14+0000` as `Mon, 2 August`
-    static let dayFormatter = DateFormatterWithAutoupdatingLocale(template: "E, d MMMM")
+    static let dayFormatter = DateFormatterWithDateFormat(template: "E, d MMMM")
 
     /// Formats `2021-08-02T18:08:14+0000` as `18:08`
-    static let timeFormatter24hour = DateFormatterWithAutoupdatingLocale(template: "HH:mm")
+    static let timeFormatter24hour = DateFormatterWithDateFormat(template: "HH:mm")
     /// Formats `2021-08-02T18:08:14+0000` as `06:08 pm`
-    static let timeFormatter12hour = DateFormatterWithAutoupdatingLocale(template: "hh:mm a")
+    static let timeFormatter12hour = DateFormatterWithDateFormat(template: "hh:mm a", useLowercasedAMPMSymbols: true)
 
 
     /// Formats `2021-08-02T18:08:14+0000` as `2021-08-02T18:08:14.000`
@@ -36,5 +45,5 @@ enum CustomDateFormatter {
     }()
 
     /// Formats `2021-08-02T18:08:14+0000` as `Mon, 2 Aug`
-    static let abbreviatedMonthFormatter: DateFormatter = DateFormatterWithAutoupdatingLocale(template: "E, d MMM")
+    static let abbreviatedMonthFormatter: DateFormatter = DateFormatterWithDateFormat(template: "E, d MMM")
 }
