@@ -38,7 +38,7 @@ final class FlightTests: XCTestCase {
         expect(flight2.id, toEqual: 2)
         expect(flight2.airlineCode, toEqual: "AS")
         expect(flight2.flightNumber, toEqual: "480")
-        expect(flight2.scheduledDuration, toEqual: Flight.Duration(hour: 5, minute: 5))
+        expect(flight2.scheduledDuration, toEqual: Flight.Duration(hour: 0, minute: 5))
 
         expect(flight2.departureAirport, toEqual: "PDX")
         expect(flight2.departureCity, toEqual: "Portland, United States")
