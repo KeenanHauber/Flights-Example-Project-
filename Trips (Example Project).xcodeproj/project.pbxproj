@@ -61,6 +61,7 @@
 		6BD92495263D6384002BC1FF /* FlightDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BD92494263D6384002BC1FF /* FlightDataService.swift */; };
 		6BD9249A263D64CE002BC1FF /* APIURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BD92499263D64CE002BC1FF /* APIURL.swift */; };
 		6BD924A2263D666B002BC1FF /* Flight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BD924A1263D666B002BC1FF /* Flight.swift */; };
+		6BEC0D82263FE105008D6BAA /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BEC0D81263FE105008D6BAA /* main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -142,6 +143,7 @@
 		6BD92494263D6384002BC1FF /* FlightDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightDataService.swift; sourceTree = "<group>"; };
 		6BD92499263D64CE002BC1FF /* APIURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIURL.swift; sourceTree = "<group>"; };
 		6BD924A1263D666B002BC1FF /* Flight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flight.swift; sourceTree = "<group>"; };
+		6BEC0D81263FE105008D6BAA /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -311,6 +313,7 @@
 		6BD50529263BB807005ABFC4 /* Trips (Example Project) */ = {
 			isa = PBXGroup;
 			children = (
+				6BEC0D81263FE105008D6BAA /* main.swift */,
 				6B4BCA9E263EBB470036EF41 /* Actionable.swift */,
 				6B4BCA4D263E46F70036EF41 /* Configurable.swift */,
 				6BD5052A263BB807005ABFC4 /* AppDelegate.swift */,
@@ -486,6 +489,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6B66803F263D93150092AE49 /* FlightAirportsView.swift in Sources */,
+				6BEC0D82263FE105008D6BAA /* main.swift in Sources */,
 				6BD5056D263BC052005ABFC4 /* TicketView.swift in Sources */,
 				6B630014263E21E800669361 /* FlightInfoView.swift in Sources */,
 				6BD92477263CDC49002BC1FF /* CGPoint+Extensions.swift in Sources */,
