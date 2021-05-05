@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6B0483DF2640ED630018E47D /* NibLoadableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0483DE2640ED630018E47D /* NibLoadableTests.swift */; };
+		6B0483E72640EDA70018E47D /* TestNibLoadableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0483E62640EDA70018E47D /* TestNibLoadableView.swift */; };
+		6B0483EC2640EDC10018E47D /* TestNibLoadableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B0483EB2640EDC10018E47D /* TestNibLoadableView.xib */; };
 		6B4BCA4E263E46F70036EF41 /* Configurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4BCA4D263E46F70036EF41 /* Configurable.swift */; };
 		6B4BCA57263E50CB0036EF41 /* FlightTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4BCA55263E50CB0036EF41 /* FlightTableViewCell.swift */; };
 		6B4BCA58263E50CB0036EF41 /* FlightTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B4BCA56263E50CB0036EF41 /* FlightTableViewCell.xib */; };
@@ -83,6 +86,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6B0483DE2640ED630018E47D /* NibLoadableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibLoadableTests.swift; sourceTree = "<group>"; };
+		6B0483E62640EDA70018E47D /* TestNibLoadableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestNibLoadableView.swift; sourceTree = "<group>"; };
+		6B0483EB2640EDC10018E47D /* TestNibLoadableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestNibLoadableView.xib; sourceTree = "<group>"; };
 		6B4BCA4D263E46F70036EF41 /* Configurable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configurable.swift; sourceTree = "<group>"; };
 		6B4BCA55263E50CB0036EF41 /* FlightTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightTableViewCell.swift; sourceTree = "<group>"; };
 		6B4BCA56263E50CB0036EF41 /* FlightTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FlightTableViewCell.xib; sourceTree = "<group>"; };
@@ -173,6 +179,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6B0483DC2640ED4A0018E47D /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				6B0483DD2640ED550018E47D /* NibLoadable */,
+			);
+			path = Interface;
+			sourceTree = "<group>";
+		};
+		6B0483DD2640ED550018E47D /* NibLoadable */ = {
+			isa = PBXGroup;
+			children = (
+				6B0483DE2640ED630018E47D /* NibLoadableTests.swift */,
+				6B0483E62640EDA70018E47D /* TestNibLoadableView.swift */,
+				6B0483EB2640EDC10018E47D /* TestNibLoadableView.xib */,
+			);
+			path = NibLoadable;
+			sourceTree = "<group>";
+		};
 		6B4BCA82263EBA4E0036EF41 /* Transitions */ = {
 			isa = PBXGroup;
 			children = (
@@ -337,6 +361,7 @@
 				6BD50541263BB80B005ABFC4 /* Trips__Example_Project_Tests.swift */,
 				6B630008263DDC3200669361 /* Constants */,
 				6B667FA8263D6BA20092AE49 /* XCTestCase+extensions.swift */,
+				6B0483DC2640ED4A0018E47D /* Interface */,
 				6B630001263DDC2D00669361 /* Data */,
 				6B667FEF263D83C50092AE49 /* TestObjects.swift */,
 				6BD50543263BB80B005ABFC4 /* Info.plist */,
@@ -473,6 +498,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B0483EC2640EDC10018E47D /* TestNibLoadableView.xib in Resources */,
 				6B667FD5263D72400092AE49 /* TestFlightData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -534,6 +560,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6B4BCAD3263FB7FE0036EF41 /* ValueExtractorTests.swift in Sources */,
+				6B0483E72640EDA70018E47D /* TestNibLoadableView.swift in Sources */,
 				6B667FE8263D83760092AE49 /* JSONDownloadTaskServiceTests.swift in Sources */,
 				6BEC0D87263FE29D008D6BAA /* CustomDateFormatterTests.swift in Sources */,
 				6B667FDA263D72620092AE49 /* FlightTests.swift in Sources */,
@@ -543,6 +570,7 @@
 				6B667FAE263D6BC50092AE49 /* ColorAssetTests.swift in Sources */,
 				6B667FA9263D6BA20092AE49 /* XCTestCase+extensions.swift in Sources */,
 				6BD50542263BB80B005ABFC4 /* Trips__Example_Project_Tests.swift in Sources */,
+				6B0483DF2640ED630018E47D /* NibLoadableTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
