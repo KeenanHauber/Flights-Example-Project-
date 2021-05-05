@@ -59,6 +59,13 @@ extension XCTestCase {
         }
     }
 
+    /// Fails if the provided value is false.
+    func expect(valueToBeTrue boolean: Bool, file: StaticString = #filePath, line: UInt = #line) {
+        if !boolean {
+            XCTFail("Expected condition to be true", file: file, line: line)
+        }
+    }
+
     /// Fails if the provided values are not equal.
     func expect<ValueType: Equatable>(_ value1: ValueType?, toEqual value2: ValueType, file: StaticString = #filePath, line: UInt = #line) {
         if value1 != value2 {

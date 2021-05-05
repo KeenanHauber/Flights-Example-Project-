@@ -30,6 +30,7 @@
 		6B4BCABA263EBC4C0036EF41 /* ConfigurableCellTableViewDataSourceWithStringHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4BCAB9263EBC4C0036EF41 /* ConfigurableCellTableViewDataSourceWithStringHeader.swift */; };
 		6B4BCACB263FA2970036EF41 /* ValueExtractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4BCACA263FA2970036EF41 /* ValueExtractor.swift */; };
 		6B4BCAD3263FB7FE0036EF41 /* ValueExtractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4BCAD2263FB7FE0036EF41 /* ValueExtractorTests.swift */; };
+		6B4FEE09264128F4005F7E1C /* FlightTableViewCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4FEE08264128F4005F7E1C /* FlightTableViewCellTests.swift */; };
 		6B630014263E21E800669361 /* FlightInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B630013263E21E800669361 /* FlightInfoView.swift */; };
 		6B630019263E220400669361 /* FlightInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B630018263E220400669361 /* FlightInfoView.xib */; };
 		6B63001E263E246900669361 /* DividingLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B63001D263E246900669361 /* DividingLine.swift */; };
@@ -109,6 +110,7 @@
 		6B4BCAB9263EBC4C0036EF41 /* ConfigurableCellTableViewDataSourceWithStringHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurableCellTableViewDataSourceWithStringHeader.swift; sourceTree = "<group>"; };
 		6B4BCACA263FA2970036EF41 /* ValueExtractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValueExtractor.swift; sourceTree = "<group>"; };
 		6B4BCAD2263FB7FE0036EF41 /* ValueExtractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValueExtractorTests.swift; sourceTree = "<group>"; };
+		6B4FEE08264128F4005F7E1C /* FlightTableViewCellTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightTableViewCellTests.swift; sourceTree = "<group>"; };
 		6B63000F263DDDF900669361 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		6B630013263E21E800669361 /* FlightInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightInfoView.swift; sourceTree = "<group>"; };
 		6B630018263E220400669361 /* FlightInfoView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FlightInfoView.xib; sourceTree = "<group>"; };
@@ -182,6 +184,7 @@
 		6B0483DC2640ED4A0018E47D /* Interface */ = {
 			isa = PBXGroup;
 			children = (
+				6B4FEE07264128D5005F7E1C /* Flight List Screen */,
 				6B0483DD2640ED550018E47D /* NibLoadable */,
 			);
 			path = Interface;
@@ -224,6 +227,14 @@
 				6B4BCAA7263EBB7E0036EF41 /* TableViewSection.swift */,
 			);
 			path = "Table Views";
+			sourceTree = "<group>";
+		};
+		6B4FEE07264128D5005F7E1C /* Flight List Screen */ = {
+			isa = PBXGroup;
+			children = (
+				6B4FEE08264128F4005F7E1C /* FlightTableViewCellTests.swift */,
+			);
+			path = "Flight List Screen";
 			sourceTree = "<group>";
 		};
 		6B630001263DDC2D00669361 /* Data */ = {
@@ -560,6 +571,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6B4BCAD3263FB7FE0036EF41 /* ValueExtractorTests.swift in Sources */,
+				6B4FEE09264128F4005F7E1C /* FlightTableViewCellTests.swift in Sources */,
 				6B0483E72640EDA70018E47D /* TestNibLoadableView.swift in Sources */,
 				6B667FE8263D83760092AE49 /* JSONDownloadTaskServiceTests.swift in Sources */,
 				6BEC0D87263FE29D008D6BAA /* CustomDateFormatterTests.swift in Sources */,
