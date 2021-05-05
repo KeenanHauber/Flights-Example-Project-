@@ -52,10 +52,10 @@ extension XCTestCase {
         expect(date, toEqual: dateComponents.date, file: file, line: line)
     }
 
-    /// Fails if the provided values are not equal.
-    func expect<ValueType: Equatable>(_ value1: ValueType, toEqual value2: ValueType, file: StaticString = #filePath, line: UInt = #line) {
-        if value1 != value2 {
-            XCTFail("\(value1) is not equal to \(value2)!", file: file, line: line)
+    /// Fails if the provided objects are not the same object.
+    func expect<ObjectType: AnyObject>(_ value1: ObjectType?, toBe value2: ObjectType?, file: StaticString = #filePath, line: UInt = #line) {
+        if value1 !== value2 {
+            XCTFail("\(String(describing: value1)) is not equal to \(String(describing: value2))!", file: file, line: line)
         }
     }
 
@@ -67,9 +67,9 @@ extension XCTestCase {
     }
 
     /// Fails if the provided values are not equal.
-    func expect<ValueType: Equatable>(_ value1: ValueType?, toEqual value2: ValueType, file: StaticString = #filePath, line: UInt = #line) {
+    func expect<ValueType: Equatable>(_ value1: ValueType?, toEqual value2: ValueType?, file: StaticString = #filePath, line: UInt = #line) {
         if value1 != value2 {
-            XCTFail("\(String(describing: value1)) is not equal to \(value2)!", file: file, line: line)
+            XCTFail("\(String(describing: value1)) is not equal to \(String(describing: value2))!", file: file, line: line)
         }
     }
 }

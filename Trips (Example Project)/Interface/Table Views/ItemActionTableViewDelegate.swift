@@ -7,6 +7,8 @@
 
 import UIKit
 
+// TODO: Test
+
 /// Calls the action associated with selected rows.
 final class ItemActionTableViewDelegate<SectionType: TableViewSection>: NSObject, UITableViewDelegate where SectionType.DataType: Actionable {
 
@@ -18,8 +20,6 @@ final class ItemActionTableViewDelegate<SectionType: TableViewSection>: NSObject
     }
 
     var data: [SectionType]
-    /// A block to call on the value associated with a selected cell.
-    var action: ((SectionType.DataType) -> ())?
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         data[indexPath.section].rows[indexPath.row].performAssociatedAction()

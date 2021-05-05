@@ -49,6 +49,7 @@
 		6B668044263D931E0092AE49 /* FlightAirportsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B668043263D931E0092AE49 /* FlightAirportsView.xib */; };
 		6BA7527D263C0E73009D0CEF /* TicketViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6BA7527C263C0E73009D0CEF /* TicketViewController.xib */; };
 		6BA75282263C0EB5009D0CEF /* TicketView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6BA75281263C0EB5009D0CEF /* TicketView.xib */; };
+		6BC204BD2642561D00C2FBDA /* FlightsViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC204BC2642561D00C2FBDA /* FlightsViewControllerTests.swift */; };
 		6BD5052B263BB807005ABFC4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BD5052A263BB807005ABFC4 /* AppDelegate.swift */; };
 		6BD5052F263BB807005ABFC4 /* TicketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BD5052E263BB807005ABFC4 /* TicketViewController.swift */; };
 		6BD50534263BB80B005ABFC4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6BD50533263BB80B005ABFC4 /* Assets.xcassets */; };
@@ -130,6 +131,7 @@
 		6B668043263D931E0092AE49 /* FlightAirportsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FlightAirportsView.xib; sourceTree = "<group>"; };
 		6BA7527C263C0E73009D0CEF /* TicketViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TicketViewController.xib; sourceTree = "<group>"; };
 		6BA75281263C0EB5009D0CEF /* TicketView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TicketView.xib; sourceTree = "<group>"; };
+		6BC204BC2642561D00C2FBDA /* FlightsViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightsViewControllerTests.swift; sourceTree = "<group>"; };
 		6BD50527263BB807005ABFC4 /* Trips (Example Project).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Trips (Example Project).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BD5052A263BB807005ABFC4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6BD5052E263BB807005ABFC4 /* TicketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketViewController.swift; sourceTree = "<group>"; };
@@ -233,6 +235,7 @@
 			isa = PBXGroup;
 			children = (
 				6B4FEE08264128F4005F7E1C /* FlightTableViewCellTests.swift */,
+				6BC204BC2642561D00C2FBDA /* FlightsViewControllerTests.swift */,
 			);
 			path = "Flight List Screen";
 			sourceTree = "<group>";
@@ -582,6 +585,7 @@
 				6B667FAE263D6BC50092AE49 /* ColorAssetTests.swift in Sources */,
 				6B667FA9263D6BA20092AE49 /* XCTestCase+extensions.swift in Sources */,
 				6BD50542263BB80B005ABFC4 /* Trips__Example_Project_Tests.swift in Sources */,
+				6BC204BD2642561D00C2FBDA /* FlightsViewControllerTests.swift in Sources */,
 				6B0483DF2640ED630018E47D /* NibLoadableTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

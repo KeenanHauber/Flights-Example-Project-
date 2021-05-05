@@ -23,15 +23,21 @@ final class FlightsViewController: UIViewController, FlightsDisplay {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        tableViewDataSource = ConfigurableCellTableViewDataSourceWithStringHeader<FlightTableViewCell>(data: [], tableView: contentView)
+        tableViewDataSource = ConfigurableCellTableViewDataSourceWithStringHeader<FlightTableViewCell>(data: data, tableView: contentView)
         contentView.delegate = tableViewDelegate
         contentView.dataSource = tableViewDataSource
     }
 
+    private var data: [TableViewTitledSection<FlightCellData>] = []
+
     func display(_ data: [TableViewTitledSection<FlightCellData>]) {
-        tableViewDataSource.data = data
+        self.data = data
+
         tableViewDelegate.data = data
 
-        contentView.reloadData()
+        if isViewLoaded {
+            tableViewDataSource.data = data
+            contentView.reloadData()
+        }
     }
 }

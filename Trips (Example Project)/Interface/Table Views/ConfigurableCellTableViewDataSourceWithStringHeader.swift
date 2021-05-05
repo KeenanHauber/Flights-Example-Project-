@@ -7,6 +7,8 @@
 
 import UIKit
 
+// TODO: Test
+
 typealias DequeueableConfigurableTableViewCell = UITableViewCell & DequeuableTableViewCell & Configurable
 
 /// Provides sections and their configured cells to a single table view.
